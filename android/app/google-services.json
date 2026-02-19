@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "574703750772",
+    "project_id": "authentication-bf431",
+    "storage_bucket": "authentication-bf431.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574703750772:android:39a168c041d639e3da4b21",
+        "android_client_info": {
+          "package_name": "com.example.authenticationfire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqQRN6DzkCxRL1HFpRkqmean8bZvKeekw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
