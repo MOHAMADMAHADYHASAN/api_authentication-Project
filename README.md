@@ -1,16 +1,46 @@
-# authenticationfire
+# 📱 api_authentication-Project
 
-A new Flutter project.
+A comprehensive Flutter application demonstrating Firebase Authentication, Real-time CRUD operations, and modern UI design (Glassmorphism) using the MVVM architecture. This project was developed as an academic project.
 
-## Getting Started
+## ✨ Features
+* **Secure Authentication:** User login and registration using Email/Password and Phone Number (OTP) via Firebase Auth.
+* **Real-time Feed:** Fetches and displays data instantly from Firebase Realtime Database.
+* **CRUD Operations:** Create, Read, Update, and Delete posts seamlessly.
+* **Dynamic Search:** Filter and find specific posts dynamically using the search bar.
+* **Modern UI/UX:** Features a Glassmorphism design, custom reusable text fields, and Shimmer loading effects for a premium feel.
+* **State Management:** Uses `Provider` integrated with the MVVM (Model-View-ViewModel) architecture.
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tech Stack
+* **Frontend:** Flutter (Dart)
+* **Backend & Database:** Firebase (Authentication, Realtime Database)
+* **State Management:** Provider
+* **Design Pattern:** MVVM
+* **UI Components:** Shimmer, Custom Widgets
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🔑 Test Credentials (For Evaluation)
+To quickly test the application without registering a new account, please use the following dummy credentials:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. Email & Password Login
+* **Email:**"user@gmail.com"
+* **Password:**"12345678"
+
+### 2. Phone Number Authentication
+* **Phone Number:** "+8801812345678"
+* **Test OTP / PIN:** `123456`
+
+
+## 🚀 How to Run the Project
+
+**Step 1:** Clone the repository.
+
+git clone  "https://github.com/MOHAMADMAHADYHASAN/api_authentication-Project.git"
+
+**Step 2:** Get all the Flutter packages.
+
+flutter pub get
+
+**Step 3:** Run the application.
+
+flutter run
