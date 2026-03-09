@@ -10,7 +10,7 @@ import '../ui/auth/loginScreen.dart';
 class AuthViewModel with ChangeNotifier {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  //====================================== alada alada loading toiri kora holo jno loading gula onno pafer loading e effect ma fele
+  //====================================== alada alada loading toiri kora holo jno loading gula onno pager loading e effect na fele
   bool _loginLoading = false;
   bool _signUpLoading = false;
   bool _phoneLoading = false;

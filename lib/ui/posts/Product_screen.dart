@@ -15,8 +15,6 @@ class MarketplaceScreen extends StatefulWidget {
 class _MarketplaceScreenState extends State<MarketplaceScreen> {
   @override
   void initState() {
-
-
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Provider.of<ProductViewModel>(
         context,

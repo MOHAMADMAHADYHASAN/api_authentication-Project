@@ -3,9 +3,8 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
-import '../../main/main_screen.dart';
 import '../../view_models/post_view_model.dart';
-import 'add_post_Screen.dart';
+
 import 'package:authenticationfire/utils/post_utils.dart';
 
 class PostScreen extends StatefulWidget {
@@ -133,7 +132,7 @@ class _PostScreenState extends State<PostScreen> {
               child: StreamBuilder(
                 stream: postViewModel.postsStream,
                 builder: (context, AsyncSnapshot<DatabaseEvent> snapshot) {
-                  //=======================loading Shimmer and error handling============================
+                  //=======================loading Shimmer ============================
                   if (snapshot.connectionState == ConnectionState.waiting) {
                     return ListView.builder(
                       itemCount: 8,
@@ -178,7 +177,9 @@ class _PostScreenState extends State<PostScreen> {
                         );
                       },
                     );
-                  } else if (snapshot.hasError) {
+                  }
+                  //======================= error handling============================
+                  else if (snapshot.hasError) {
                     return Center(
                       child: Text(
                         "Error: ${snapshot.error}",
@@ -264,7 +265,7 @@ class _PostScreenState extends State<PostScreen> {
                             ),
                           ),
 
-                          // ৩. টাইটেল ডিজাইন
+                          //
                           title: Text(
                             title,
                             style: const TextStyle(

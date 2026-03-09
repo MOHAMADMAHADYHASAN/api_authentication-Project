@@ -9,8 +9,8 @@ class ProductModel {
   ProductModel.fromJson(dynamic json) {
     if (json['products'] != null) {
       products = [];
-      json['products'].forEach((v) {
-        products?.add(Products.fromJson(v));
+      json['products'].forEach((e) {
+        products ?. add(Products.fromJson(e));
       });
     }
     total = json['total'];
